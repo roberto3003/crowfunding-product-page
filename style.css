@@ -1,7 +1,7 @@
 :root {
   --line-h: 1.5em;
   --padding: 1.5em;
-  --gap: calc(var(--line-h)*2);
+  --gap: calc(var(--line-h)*1);
   --radius: 1rem;
   --font-size: clamp(0.8rem, 1.25vw, 2.5rem);
   --letter-spacing: 0.25em;
@@ -26,14 +26,14 @@
 
 /* light-theme colors */
 :root {
-  --bg-color: whitesmoke;
+  --bg-color: mintcream;
   --text: rgba(46, 49, 49, 1);
   --text-70: rgba(46, 49, 49, 0.7);
   --text-contrast: var(--white);
-  --theme: mistyrose;
+  --theme: powderblue;
   --medium: lavender;
   --contrast: lightsteelblue;
-  --accent: orangered;
+  --accent: darkcyan;
   --white: white;
   --black: rgba(46, 49, 49, 1);
   --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
@@ -335,14 +335,6 @@ hr {
   min-width: 300px;
 }
 
-article header {
-  align-items: baseline;
-}
-
-article .button {
-  margin-inline-end: 0;
-}
-
 /* Grid */
 .grid {
   display: grid;
@@ -441,6 +433,7 @@ article .button {
 }
 
 .button:hover {
+  background-color: var(--white);
   border: 0.1em  solid var(--accent);
   color: var(--accent);
 }
@@ -492,6 +485,36 @@ article .button {
 }
 
 
-***************************************************************************
-***************************************************************************
+/* **************************************************************************
+*************************************************************************** */
 
+/* Site specific */
+article header, .numbers {
+  align-items: baseline;
+}
+
+article {
+  border: 0.2em  solid var(--theme);
+  border-radius: var(--padding);
+  padding: var(--padding);
+  margin-block: calc(var(--line-h)*2);
+  box-shadow: var(--shadow);
+  background-color: var(--white);
+} 
+
+article .button {
+  margin-inline-end: 0;
+}
+
+small b {
+  font-size: 2em;
+}
+
+progress {
+  width: 100%;
+}
+
+progress::-webkit-progress-bar-value {
+  -webkit-appearance: none;
+  background: orangered;
+}
