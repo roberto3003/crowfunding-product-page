@@ -394,7 +394,7 @@ hr {
   align-items: center;
 }
 
-center {
+.center {
   text-align: center;
 }
 
@@ -421,6 +421,7 @@ center {
 
 
 /* Buttons and CTA */
+/* <div class="button cta"><a href="">Start for Free</a></div> */
 .button {
   border-radius: var(--padding);
   border: 0.1em  solid var(--text);
