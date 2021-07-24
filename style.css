@@ -62,13 +62,14 @@
 	margin: 0;
   }
 
-  /* Set line height */
+  /* Set line height & brake world */
   h1,
   h2,
   h3,
   h4,
   p {
 	line-height: var(--line-h);
+	word-break: break-word;
   }
 
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -232,7 +233,7 @@ p a:hover {
   text-decoration-thickness: initial;
 }
 
-header {
+.header {
   background-color: var(--theme);
   min-height: calc(var(--line-h)*3);
 }
@@ -332,6 +333,14 @@ hr {
   background-position: 50% 50%;
   min-height:33vh;
   min-width: 300px;
+}
+
+article header {
+  align-items: baseline;
+}
+
+article .button {
+  margin-inline-end: 0;
 }
 
 /* Grid */
